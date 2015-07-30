@@ -1,0 +1,20 @@
+Source: enlightenment
+Section: x11
+Priority: optional
+Maintainer: Niko2040 <niko2040@bynets.ru>
+Build-Depends: debhelper (>= 9), autotools-dev, autoconf, automake, check, libtool, libxcb-shape0-dev, libxdmcp-dev, libunistring0, libefl-dev, libegl1-mesa-dev, libxau-dev, gettext, libxfixes-dev, libfreetype6-dev, libpam0g-dev, libwayland-dev, libelementary-dev, x11proto-kb-dev, libcroco3-dev, x11proto-damage-dev, x11proto-xf86vidmode-dev, libxcb-keysyms1-dev, libxdamage-dev, uuid-dev, libpthread-stubs0-dev, libbluetooth-dev, libx11-xcb-dev, mime-support, libexpat1-dev, libasound2-dev, cpio, libpixman-1-dev, x11proto-randr-dev, x11proto-render-dev, x11proto-xf86vidmode-dev, x11proto-composite-dev, libxcursor-dev, libjpeg8-dev, libxss-dev, libxcomposite-dev, libxtst-dev, libxinerama-dev, libxi-dev, libxrandr-dev, libxp-dev, systemd
+Standards-Version: 3.9.6
+Homepage: http://enlightenment.org
+#Vcs-Git: git://git.debian.org/collab-maint/enlightenment.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/enlightenment.git;a=summary
+
+Package: enlightenment
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, evas-generic-loaders, emotion-generic-players
+Description: Enlightenment E19
+ The Compositing Window Manager and Desktop Shell.
+
+#Package: enlightenment-doc
+#Architecture: all
+#Description: documentation for enlightenment
+# <insert long description, indented with spaces>

@@ -1,0 +1,11 @@
+python-efl (1.14.0-0vivid0) vivid; urgency=low
+
+  * New upstream release
+
+ -- Arthur (Niko2040) Nikitenko <niko2040@bynets.ru>  Fri, 08 May 2015 06:16:13 +0300
+
+python-efl (1.13.0-0vivid0) vivid; urgency=low
+
+  * First packaging
+
+ -- Arthur (Niko2040) Nikitenko <niko2040@bynets.ru>  Wed, 18 Feb 2015 06:34:27 +0300

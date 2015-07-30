@@ -1,0 +1,7 @@
+usr/lib/*/lib*.so.*
+usr/lib/*/edje/modules/elm/*/module.so
+usr/lib/*/elementary/modules/access_output/*/module.so
+usr/lib/*/elementary/modules/datetime_input_ctxpopup/*/module.so
+usr/lib/*/elementary/modules/prefs/*/module.so
+usr/lib/*/elementary/modules/test_entry/*/module.so
+usr/lib/*/elementary/modules/test_map/*/module.so

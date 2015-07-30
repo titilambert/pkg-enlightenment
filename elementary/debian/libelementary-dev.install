@@ -1,0 +1,11 @@
+usr/include/*
+usr/lib/*/edje/modules/elm/*/module.la
+usr/lib/*/elementary/modules/access_output/*/module.la
+usr/lib/*/elementary/modules/datetime_input_ctxpopup/*/module.la
+usr/lib/*/elementary/modules/prefs/*/module.la
+usr/lib/*/elementary/modules/test_entry/*/module.la
+usr/lib/*/elementary/modules/test_map/*/module.la
+usr/lib/*/lib*.la
+usr/lib/*/lib*.so
+usr/lib/*/pkgconfig/*
+usr/lib/*/cmake/*

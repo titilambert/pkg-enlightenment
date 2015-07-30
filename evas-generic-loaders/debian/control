@@ -1,0 +1,15 @@
+Source: evas-generic-loaders
+Section: misc
+Priority: optional
+Maintainer: Arthur (Niko2040) Nikitenko <niko2040@bynets.ru>
+Build-Depends: debhelper (>= 9), autotools-dev, autoconf, automake, check, libxdmcp-dev, libgdk-pixbuf2.0-dev, libxfixes-dev, x11proto-xf86vidmode-dev, libgl1-mesa-dev, mime-support, x11proto-kb-dev, librsvg2-dev, libfreetype6-dev, libpopt0, libgstreamer-plugins-base0.10-dev, libx11-xcb-dev, libsystemd-id128-dev, libxau-dev, libspectre-dev, x11proto-damage-dev, libpoppler-dev, libglib2.0-dev, libpoppler-private-dev, mawk, pkg-config, libgstreamer0.10-dev, libpixman-1-dev, liblcms2-dev, x11proto-render-dev, libegl1-mesa-dev, libsystemd-journal-dev, libraw-dev, libpng12-dev, libcairo2-dev, libxdamage-dev, libexpat1-dev, libefl-dev, libc6, libpthread-stubs0-dev, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev
+Standards-Version: 3.9.5
+Homepage: http://enlightenment.org
+#Vcs-Git: git://git.debian.org/collab-maint/evas-generic-loaders.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/evas-generic-loaders.git;a=summary
+
+Package: evas-generic-loaders
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Evas Generic Loaders
+ Extra image decoders.

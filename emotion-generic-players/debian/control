@@ -1,0 +1,15 @@
+Source: emotion-generic-players
+Section: misc
+Priority: optional
+Maintainer: Arthur (Niko2040) Nikitenko <niko2040@bynets.ru>
+Build-Depends: debhelper (>= 9), autotools-dev, autoconf, automake, check, uuid-dev, libharfbuzz-dev, libfontconfig1-dev, mawk, libc6, libsystemd-id128-dev, libblkid-dev, libefl-dev, libudev-dev, libpopt0, libexpat1-dev, pkg-config, libglib2.0-dev, mime-support, libsystemd-journal-dev, libfreetype6-dev, libpng12-dev, libmount-dev, libsystemd-daemon-dev, libssl-dev, libvlc-dev, libfribidi-dev, libluajit-5.1-dev
+Standards-Version: 3.9.5
+Homepage: http://enlightenment.org
+#Vcs-Git: git://git.debian.org/collab-maint/emotion-generic-players.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/emotion-generic-players.git;a=summary
+
+Package: emotion-generic-players
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Generic players for Emotion.
+ Extra video decoders.

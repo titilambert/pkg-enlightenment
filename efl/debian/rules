@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-xinput22 --enable-image-loader-webp --enable-fb --disable-tslib --enable-v4l2 --with-x --enable-harfbuzz --enable-multisense --enable-systemd
+%:
+	dh $@  --with autotools-dev  --dbg-package=libefl-dbg

@@ -1,0 +1,44 @@
+Source: efl
+Priority: optional
+Maintainer: Arthur (Niko2040) Nikitenko <niko2040@bynets.ru>
+Build-Depends: debhelper (>= 9), autotools-dev, autoconf, automake, check, libtool, libbullet-dev, libpng12-dev, libxrender-dev, uuid-dev, libavahi-client-dev, libpulse-dev, libgstreamer1.0-dev, x11proto-kb-dev, libblkid-dev, libgl1-mesa-dev, x11proto-xf86vidmode-dev, libglib2.0-dev, libfribidi-dev, libxcb1-dev, libgstreamer-plugins-base1.0-dev, libgstreamer-plugins-good1.0-dev, libgstreamer-plugins-bad1.0-dev, libjpeg-turbo8-dev, x11proto-randr-dev, x11proto-damage-dev, libxcursor-dev, libfreetype6-dev, libxinerama-dev, libegl1-mesa-dev, libxtst-dev, libxcomposite-dev, x11proto-scrnsaver-dev, libxp-dev, libwebp-dev, libxss-dev, pkg-config, x11proto-render-dev, libsigsegv2, libmount-dev, libxrandr-dev, libluajit-5.1-dev, mesa-common-dev, libcroco3-dev, libssl-dev, libsndfile1-dev, libharfbuzz-dev, libsystemd-id128-dev, libgif-dev, libxau-dev, cpio, x11proto-composite-dev, libtiff5-dev, x11proto-print-dev, libudev-dev, libxi-dev, gettext, mime-support, libsystemd-daemon-dev, libfakeroot, libxkbcommon-dev, libpthread-stubs0-dev, libxdmcp-dev, libfontconfig1-dev, libsystemd-journal-dev, libsystemd-login-dev, libgles2-mesa-dev, systemd
+Standards-Version: 3.9.6
+Section: libs
+Homepage: http://enlightenment.org
+Vcs-Git: git://git.enlightenment.org/core/efl.git
+Vcs-Browser: http://git.enlightenment.org/core/efl.git/
+
+Package: libefl-dev
+Section: libdevel
+Architecture: any
+Depends: libefl (= ${binary:Version}), ${misc:Depends}, pkg-config, libxml2-dev, libxslt-dev, libudev-dev, libmount-dev, libsystemd-login-dev, libsystemd-journal-dev, libsystemd-daemon-dev, libsystemd-id128-dev, libdbus-1-dev, libluajit-5.1-dev, libpng12-dev, libblkid-dev, libsndfile1-dev, libglib2.0-dev, libssl-dev, libxkbcommon-dev, libharfbuzz-dev, libfribidi-dev, libpulse-dev, libfontconfig1-dev, libbullet-dev
+Description: Enlightenment Foundation Libraries (development files)
+ Development files for EFL.
+
+Package: libefl
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libefl-data, libefl-bin (= ${binary:Version})
+Conflicts: libecore1, libecore-audio1, libecore-con1, libecore-evas1, libecore-fb1, libecore-file1, libecore-imf1, libecore-imf-evas1, libecore-input1, libecore-input-evas1, libecore-ipc1, libecore-wayland1, libecore-x1, libedje1, libeet1, libeeze1, libefreet1, libefreet-mime1, libefreet-trash1, libeina1, libeio1, libeldbus1, libembryo1, libemotion1, libeo1, libephysics1, libethumb1, libethumb-client1, libevas1
+Replaces: libecore1, libecore-audio1, libecore-con1, libecore-evas1, libecore-fb1, libecore-file1, libecore-imf1, libecore-imf-evas1, libecore-input1, libecore-input-evas1, libecore-ipc1, libecore-wayland1, libecore-x1, libedje1, libeet1, libeeze1, libefreet1, libefreet-mime1, libefreet-trash1, libeina1, libeio1, libeldbus1, libembryo1, libemotion1, libeo1, libephysics1, libethumb1, libethumb-client1, libevas1
+Description: Enlightenment Foundation Libraries
+ EFL is small and powerful libraries for creation beauty and functional apps.
+
+Package: libefl-data
+Section: misc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Enlightenment Foundation Libraries (data files)
+ Miscellaneous files for EFL.
+ 
+Package: libefl-bin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Enlightenment Foundation Libraries (binary files)
+ Binary files for EFL.
+ 
+Package: libefl-dbg
+Architecture: any
+Depends: libefl (=${binary:Version})
+Description: Enlightenment Foundation Libraries (debug symbols)
+ Debug symbols for EFL

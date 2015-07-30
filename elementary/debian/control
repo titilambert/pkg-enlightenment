@@ -1,0 +1,38 @@
+Source: elementary
+Priority: optional
+Maintainer: Arthur (Niko2040) Nikitenko <niko2040@bynets.ru>
+Build-Depends: debhelper (>= 9), autotools-dev, autoconf, automake, check, libtool, libexpat1-dev, libcroco3, libefl-dev, uuid-dev, libunistring0, libpopt0, libfreetype6-dev, libxp-dev, x11proto-damage-dev, x11proto-print-dev, x11proto-randr-dev, x11proto-render-dev, x11proto-xf86vidmode-dev, x11proto-composite-dev, libxcursor-dev, libjpeg8-dev, libxss-dev, libxcomposite-dev, libxtst-dev, libxinerama-dev, libxfixes-dev, libxi-dev, libxdamage-dev, libxrandr-dev
+Standards-Version: 3.9.6
+Section: libs
+Homepage: http://enlightenment.org
+Vcs-Git: git://git.enlightenment.org/core/elementary.git
+Vcs-Browser: http://git.enlightenment.org/core/elementary.git/
+
+Package: libelementary-dev
+Section: libdevel
+Architecture: any
+Depends: libelementary2 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Elementary widget set for EFL (development files)
+ Elementary widget set for EFL. Headers files.
+
+Package: libelementary2
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libelementary-data, libelementary-bin (= ${binary:Version})
+Conflicts: libelementary1
+Replaces: libelementary1
+Description: Elementary widget set for EFL
+ Elementary widget set for Enlightenment Foundation Libraries.
+
+Package: libelementary-data
+Section: misc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Elementary widget set for EFL (data files)
+ Miscellaneous files for Elementary.
+ 
+Package: libelementary-bin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Elementary widget set for EFL (binary files)
+ Binary files for Elementary.

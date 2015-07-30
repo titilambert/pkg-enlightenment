@@ -1,0 +1,12 @@
+Source: python-efl
+Maintainer: Arthur (Niko2040) Nikitenko <niko2040@bynets.ru>
+Section: python
+Priority: optional
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 9), libefl-dev, libelementary-dev, python-dbus-dev (>= 0.83.0), python-all-dev
+Standards-Version: 3.9.5
+
+Package: python-efl
+Architecture: any
+Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends}
+Description: Python bindings for Enlightenment Foundation Libraries
+
